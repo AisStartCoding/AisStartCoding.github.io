@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // This replaces 'next export'
+  output: "export",
+  trailingSlash: true,
+
+  // Replace `portfolio-website` with your repo name
+  basePath: "/portfolio-website",
+  assetPrefix: "/portfolio-website/",
+
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
-  basePath: '',
-  assetPrefix: './',
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
