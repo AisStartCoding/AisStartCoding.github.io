@@ -98,8 +98,12 @@ export default {
           },
         },
         'pulse-soft': {
-          '0%, 100%': { opacity: 0.3 },
-          '50%': { opacity: 1 },
+          '0%, 100%': { 
+            boxShadow: '0 0 50px rgba(139, 92, 246, 0.2)',
+          },
+          '50%': { 
+            boxShadow: '0 0 70px rgba(139, 92, 246, 0.3)',
+          },
         },
         'blackhole-spin': {
           '0%': { transform: 'rotate(0deg)' },
