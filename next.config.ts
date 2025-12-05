@@ -1,15 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
+module.exports = {
+  output: "export",      // enables full static export
   trailingSlash: true,
-
-  // Replace `portfolio-website` with your repo name
-  basePath: "/portfolio-website",
-  assetPrefix: "/portfolio-website/",
-
-  images: {
-    unoptimized: true,
-  },
+  basePath: "",           // leave blank for user-page root
+  assetPrefix: "",        // blank for root URL
+  images: { unoptimized: true },
 };
-
-module.exports = nextConfig;
