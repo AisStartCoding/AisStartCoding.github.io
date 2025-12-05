@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static export
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export with custom images
+    unoptimized: true,
   },
-  trailingSlash: true, // Optional: for better GitHub Pages compatibility
+  trailingSlash: true, // Important!
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? './' : '',
 }
 
 module.exports = nextConfig
