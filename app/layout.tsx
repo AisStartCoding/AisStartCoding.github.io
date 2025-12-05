@@ -2,7 +2,7 @@ import './globals.css';
 import CursorFollower from './components/Cursor/CursorFollower';
 import ProfileSidebar from './components/Profile/ProfileSidebar';
 import Navigation from './components/Navigation/Navigation';
-import BlackholeBackground from './components/Background/BlackholeBackground';
+
 
 export const metadata = {
   title: 'Abdullah - Senior Full Stack Developer',
